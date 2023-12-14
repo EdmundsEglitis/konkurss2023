@@ -5,7 +5,7 @@ function Flight(props) {
   return (
     <div className={styles.flight}>
       <div>
-        <img src='./plane-departure.svg'/>
+      <img src='./plane-departure.svg' style={{ filter: 'brightness(0) invert(1)', width: '80px', height: '80px' }} />
         <h2>{props.flight.origin}</h2>
       </div>
       <div style={{ textAlign: 'center' }}>
@@ -16,7 +16,7 @@ function Flight(props) {
   </p>
 </div>
       <div>
-        <img src='./plane-arrival.svg'/>
+        <img src='./plane-arrival.svg' style={{ filter: 'brightness(0) invert(1)' , width: '80px', height: '80px'}}/>
         <h2>{props.flight.destination}</h2>
       </div>
     </div>
